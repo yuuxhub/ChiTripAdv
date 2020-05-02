@@ -1,0 +1,267 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.span{
+  color:red;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  padding: 80px 0 100px 0;
+  background-size: cover;
+  text-align: center;
+}
+
+/*----------ラッパーごとの色分け----------*/
+.Item-wrapper {
+  background-image: url(https://chisktrans.herokuapp.com/img/back.JPG);
+/*背景色の変更  background-color: rgb(255, 213, 213); */
+  color: white;
+  opacity: 0.8;
+}
+
+.todo-wrapper {
+  background-color: rgb(255, 213, 213);
+  color: BLACK;
+}
+
+.search-wrapper {
+  background-color: rgb(193, 255, 255);
+  color: BLACK;
+}
+
+.input-wrapper {
+  background-color: rgb(255, 255, 196);
+  color: BLACK;
+}
+
+.login-wrapper {
+  background-color: rgb(195, 195, 195);
+  color: BLACK;
+}
+
+.login-wrapper p{
+  font-size: 80px;
+}
+
+.heading {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+  color :white ;
+/*背景色変更に伴う文字色変更 color: rgb(150, 75, 0);　*/
+}
+
+.heading h3 {
+  font-weight: normal;
+  color : rgb(34, 49, 52);
+/*背景色変更に伴う文字色変更 color: rgb(150, 75, 0);　*/
+}
+
+.btn{
+  padding: 8px 24px;
+  color: BLACK;
+  display: inline-block;
+  opacity: 0.9;
+  border-radius: 4px;
+  text-align: center;
+  background-color:WHITE;
+}
+
+.btn:hover {
+  opacity: 1;
+  background-color:rgba(34, 49, 52,0.8);
+  color: WHITE;
+}
+
+
+.Item {
+  float: left;
+  width: 33%;
+}
+
+.Item-icon {
+  position: relative;
+  width : 75%;
+  margin : 0 auto;
+  opacity : 0.8;
+}
+
+.Item-icon:hover {
+  opacity: 1;
+}
+
+.Item-icon p {
+  position: absolute;
+  top:30%;
+  width: 100%;
+  color: white;
+/*背景色変更に伴う文字色変更 color: rgb(150, 75, 0);　*/
+  font-size: 30px;
+}
+
+.Item-icon:hover p{
+  color: white;
+  font-size:40px;
+}
+
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 15px;
+  color: white;
+/*背景色変更に伴う文字色変更 color: rgb(150, 75, 0);　*/
+  opacity: 0.7;
+}
+
+.todo-Title {
+  width: 100%;
+  font-size:30px;
+  height: 40px;
+  margin-bottom:20px;
+  letter-spacing:5px;
+}
+
+.todo-content{
+  text-align: left;
+}
+
+.form-item {
+  margin: 20px 10px ;
+  padding: 20px 0 10px 0;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.Stage {
+  margin:0px auto 50px auto;
+  background-color: rgba(255, 255, 255,0.9);
+  color: BLACK;
+  text-align: center;
+  padding: 10px 50px;
+}
+
+.Search {
+  margin:0px auto 50px auto;
+  background-color: rgba(255, 255, 255,0.9);
+  color: BLACK;
+  text-align: center;
+  padding: 10px 50px;
+}
+
+.Forms {
+  margin:0px auto;
+  padding-bottom: 30px;
+  background-color: rgba(255, 255, 255,0.9);
+}
+
+.form-box{
+  width:70%;
+  margin: 20px 10px ;
+  padding: 20px 0 10px 0;
+}
+
+/*----------ステージごとの色分け----------*/
+
+.SA {
+  background-color: rgb(255, 255, 187);
+}
+.UI {
+
+  background-color: rgb(219, 219, 255);
+}
+.SS {
+  background-color: rgb(204, 255, 204);
+}
+.PGPT {
+  background-color: rgb(213, 255, 255);
+}
+.IT {
+  background-color: rgb(255, 220, 185);
+}
+.ST {
+  background-color: rgb(224, 224, 224);
+}
+.OT {
+  background-color: rgb(255, 232, 243);
+}
+
+/*----------ヘッダ部----------*/
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+ height: 65px;
+//  margin-top: 20px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: 10px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+/*----------フッター部----------*/
+
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
